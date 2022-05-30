@@ -1,0 +1,13 @@
+{
+  "name": "Vanilla-JavaScript-Todo-MVC",
+  "version": "1.0.0",
+  "description": "Vanilla-JavaScript-Todo-MVC by yeummy-sk",
+  "main": "app.js",
+  "repository": "https://github.com/Yummy-sk/Vanilla-JavaScript-Todo-MVC.git",
+  "author": "Yeum Sang Kwon <kunshup2000@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "todomvc-app-css": "^2.4.2",
+    "todomvc-common": "^1.0.5"
+  }
+}
