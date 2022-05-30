@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-framework="javascript">
   <head>
-    <meta charset="utf-8" />
+    <script src="js/main.js" type="module" defer></script>
     <title>VanillaJS • TodoMVC</title>
     <link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
     <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
@@ -10,7 +10,11 @@
     <section class="todoapp">
       <header class="header">
         <h1>todos</h1>
-        <input class="new-todo" placeholder="What needs to be done?" autofocus />
+        <input
+          class="new-todo"
+          placeholder="What needs to be done?"
+          autofocus
+        />
       </header>
 
       <section class="main">
@@ -38,11 +42,16 @@
 
     <footer class="info">
       <p>Double-click to edit a todo</p>
-      <p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
-      <p>Refactored by <a href="https://github.com/Yummy-sk/Vanilla-JavaScript-Todo-MVC">Sang Kwon Yeum</a></p>
+      <p>
+        Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a>
+      </p>
+      <p>
+        Refactored by
+        <a href="https://github.com/Yummy-sk/Vanilla-JavaScript-Todo-MVC"
+          >Sang Kwon Yeum</a
+        >
+      </p>
       <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
     </footer>
-
-    <script src="/js/main.js"></script>
   </body>
 </html>

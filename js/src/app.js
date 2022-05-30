@@ -1,16 +1,25 @@
 import { Header } from './components/index.js';
-import { $ } from './utils/index.js';
+import { $, getUniqueKey } from './utils/index.js';
 
 class App {
-    constructor() {
-        this.state = [];
+  constructor() {
+    this.state = [];
 
-        const header = new Header({
-            $target: $('.header')
-        });
-    }
+    this.header = new Header({
+      $target: $({ selector: '.new-todo' }),
+      addTodo: this.addTodo.bind(this),
+    });
+  }
 
+  addTodo({ todo }) {
+    this.state.push({ id: getUniqueKey(), todo });
+  }
     
+    
+
+  render() {
+    this.header.render();
+  }
 }
 
 export default App;
